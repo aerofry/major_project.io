@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison of 3 models</title>
+    <link href="external.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+      footer {
+      display: flex;
+      justify-content: space-evenly;
+      background-color:rgb(209, 187, 63);
+      color: #d4c3c3;
+      padding:10px;
+      position:relative;
+      bottom: 0px;
+      width: 159%;
+      left: 0px;
+       text-align:center; 
+      font-size: 16px;
+      clear: both;
+      margin-top: 100px;
+      margin-left: -30%;
+      
+      
+    }
+    
+     
+    .column {
+      width: 100%;
+        padding: 10px;
+    }
+    
+    
+    
+    ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+    
+    li {
+      
+        margin-bottom:10px;
+    }
+    .footer-link:hover {
+      color: #e9dddd; /* change the color to your desired hover color */
+      text-decoration: underline;
+      width: 10px;
+    }
+
+    
+      
+  .comparison-table {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #e7d90b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .model-header {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: #ffd700;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ffd700;
+  }
+
+  .feature-row {
+    grid-column: 1 / -1;
+    display: flex;
+     flex-wrap: wrap; 
+    
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #140707;
+  }
+
+  .feature-row h3 {
+    flex-basis: 20%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .model-detail {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e2980e;
+    border-radius: 10px;
+  }
+
+  .model-detail:hover {
+    background-color: #0f0c0c;
+    border: 1px solid #ffd700;
+  }
+ 
+  /* Responsive design for mobile screens */
+  @media only screen and (max-width: 600px) {
+    .comparison-table {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .model-header {
+      grid-column: 1 / -1;
+    }
+    .feature-row {
+      flex-direction: column;
+    }
+    .model-detail {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .model-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model-header h2 {
+  flex-basis: 25%; /* adjust the width of each header element */
+  text-align: center;
+}
+.battery-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.battery-container h3 {
+  flex-basis: 10%; /* adjust the width of the header element */
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.battery-container .model-detail {
+  flex-basis: 20%; /* adjust the width of each model detail element */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e2980e;
+  border-radius: 10px;
+  margin: 0  90px;
+}
+.battery-features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.battery-features-container h3 {
+  flex-basis: 20%; /* adjust the width of the header element */
+  text-align: left;
+  
+  margin-bottom: 10px;
+}
+
+.battery-features-container .model-detail {
+  flex-basis: 25%; /* adjust the width of each model detail element */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e2980e;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.key{
+  height:40px;
+}
+
+
+</style>
+
+</head>
+<body bgcolor="black">
+  <nav>
+    <a href="EV.html"><img id="image" src="icon (1).png"></a> 
+     
+     <a href="EV.html"> Home</a>
+     <a href="aboutus.html"> About us</a>
+     <div class="dropdown">
+       <span>Products</span>
+       <div class="dropdown-content">
+        <a href="s03lite.html" target="_blank"> SE03 Lite</a><br><br>
+        <a href="03.html" target="_blank"> SE03 </a><br><br>
+        <a href="max.html"target="_blank">SE03 Max</a><br><br>
+        <a href="compare.html">Compare all</a><br><br>
+       </div>
+     </div>
+     <a href="contact.html">Contact us</a>
+      <a href="book.html">Pre-book now</a>
+      <a href="Rentals.html" target="_blank">Rentals</a>
+      <a href=" https://www.instagram.com/" target="_blank"><i  class="fa-brands fa-instagram ins"></i></a>
+      <a href=" https://www.linkedin.com/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <nav>
+        <hr>
+        <br><br>
+     
+    
+  <div class="comparison-table"> 
+        <div  class="model-header">
+          <h2>Specification</h2>
+          <h2>Rhyno SE03 Lite</h2>
+          <h2>Rhyno SE03</h2>
+          <h2>Rhyno SE03 Max</h2>
+        
+        </div>
+        
+            
+          
+        <div class="feature-row" >
+          <div class="battery-container">
+          <h3>Battery</h3>
+          <div class="model-detail">1.8Kwh</div>
+          <div class="model-detail">2.7Kwh</div>
+          <div class="model-detail">2.7Kwh</div>
+        </div>
+        </div>
+       
+            
+        <div class="feature-row" >
+          <div class="battery-features-container">
+         <h3>Battery features</h3>
+          <div class="model-detail">LFP with
+            1500 cycles
+            Active
+            Balancing
+            Waterproof
+            (IP67)</div>
+          <div class="model-detail">LFP with 1500
+            cycles
+            Active
+            Balancing
+            Waterproof
+            (IP67)</div>
+          <div class="model-detail">LFP with 1500
+            cycles
+            Active Balancing
+            Waterproof
+            (IP67)</div>
+        </div>
+      </div>
+        
+        
+            
+        <div class="feature-row">
+            <h3>Battery warranty</h3>
+            <div class="model-detail">3 years</div>
+            <div class="model-detail">3 years</div>
+            <div class="model-detail">3 years</div>
+        </div>
+        
+
+        
+            
+        <div class="feature-row">
+            <h3>Charging time</h3>
+            <div class="model-detail">3 hours(12A)</div>
+            <div class="model-detail">4 hours(12A)</div>
+            <div class="model-detail">4 hours(12A)</div>
+        </div>
+        
+
+       
+            
+        <div class="feature-row">
+            <h3>Motor</h3>
+            <div class="model-detail">1500W</div>
+            <div class="model-detail">1500W</div>
+            <div class="model-detail">2000W</div>
+        </div>
+        
+
+        
+        
+        <div class="feature-row">
+            <h3>Max speed</h3>
+            <div class="model-detail">55km/h</div>
+            <div class="model-detail">55km/h</div>
+            <div class="model-detail">65km/h</div>
+        </div>
+        
+
+        
+            
+        <div class="feature-row">
+            <h3>Warranty on electronics</h3>
+            <div class="model-detail">1 year</div>
+            <div class="model-detail">1 year</div>
+            <div class="model-detail">1 year</div>
+        </div>
+        
+
+        
+            
+        <div class="feature-row">
+            <h3>Max rage (@30km/h)</h3>
+            <div class="model-detail">100km</div>
+            <div class="model-detail">150km</div>
+            <div class="model-detail">120km</div>
+        </div>
+        
+
+        
+            
+        <div class="feature-row">
+            <h3>Max rage (45km/h)</h3>
+            <div class="model-detail">90km</div>
+            <div class="model-detail">110km</div>
+            <div class="model-detail">100km</div>
+        </div>
+        
+
+       
+            
+        <div class="feature-row">
+            <h3>Max rage (@full speed)</h3>
+            <div class="model-detail">60km</div>
+            <div class="model-detail">90km</div>
+            <div class="model-detail">80km</div>
+        </div>
+        
+       
+            
+
+        <div class="feature-row  ">
+            <h3>Other key benefits</h3>
+            <div class="model-detail"><p>Fire-safe
+                Battery
+                Range
+                prediction
+                Comfortable
+                ride
+                Stable and
+                safe </p></div>
+            <div class="model-detail"><p>Fire-safe
+                Battery
+                Range
+                prediction
+                Comfortable
+                ride
+                Stable and
+                safe
+              </p></div>
+            <div class="model-detail"><p>Fire-safe
+                Battery
+                Range
+                prediction
+                Comfortable
+                ride
+                Stable and
+                safe</p></div>
+
+        </div>
+        
+
+        
+      </div>
+
+      <footer >
+        <div class="column">
+        <ul>
+              <li><a class="footer-link" href="contact.html">Contact us</a></li>
+               <li><a class="footer-link" href="compare.html"> Products</a></li>
+               <li><a class="footer-link" href=" https://www.linkedin.com/">Career</a></li>
+              
+            </ul>
+          </div>
+          
+          <div class="column" >
+            <ul>
+              
+              <li><a class="footer-link" href="policy.html"> Privacy Policy</a></li>
+              <li><a class="footer-link" href="policy.html"> Website Policy</a></li>
+              <li><a class="footer-link" href="policy.html"> Refund Policy</a></li>
+      
+      
+            </ul>
+      
+          </div>
+      
+         
+      
+      
+          <div class="column" >
+      
+            <ul>
+              
+              <li> <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram ins"></i></a></li><br>
+              <li><a href=" https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+      
+      
+            </ul>
+          </div>
+        </footer>
+  
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #333; /* dark black background */
+}
+
+header {
+    background-color: #333; /* dark black background for the header */
+    color: #ffd700; /* golden text color */
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #333; /* dark black border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* white background for the main section */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #ffd700; /* golden text color */
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="month"] {
+    padding: 10px;
+    border: 1px solid #333; /* dark black border */
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff; /* white background for input fields */
+    color: #333; /* dark black text color */
+}
+
+button[type="submit"] {
+    background-color: #ffd700; /* golden background color */
+    color: #333; /* dark black text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd700; /* golden background color on hover */
+    color: #333; /* dark black text color on hover */
+}
+
+/* added some extra stylings */
+main {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* increased the box shadow effect */
+}
+
+label {
+    font-weight: bold; /* made the label text bold */
+}
+
+input[type="text"], input[type="number"], input[type="month"] {
+    margin-bottom: 20px; /* added some extra margin between input fields */
+}
+
+button[type="submit"] {
+    margin-top: 20px; /* added some extra margin above the submit button */
+}

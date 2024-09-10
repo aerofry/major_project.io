@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhyno EV</title>
+  <link rel="stylesheet" href="external.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  
+
+<style>
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:gold;
+  color: #fff;
+  padding:10px;
+  position:relative;
+  bottom: 0px;
+  width: 99%;
+  left: 0px;
+   text-align:center; 
+  font-size: 16px;
+  clear: both;
+  margin-top: 100px;
+  
+  
+}
+
+ 
+.column {
+    width:20%;
+    padding: 0px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+  
+    margin-bottom:10px;
+}
+.footer-link:hover {
+  color: #f1d9d9; /* change the color to your desired hover color */
+  text-decoration: underline;
+  width: 10px;
+}
+#changing-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#changing-word {
+  color: #f3f710;
+  font-weight: bold;
+}
+.usp{
+  font-size: 30px;
+  color: aliceblue;
+  text-decoration: underline;
+  text-align: center;
+}
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #201b1b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height:110px;
+}
+
+.carousel-item {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 90%;
+  padding: 20px;
+  opacity: 0;
+  /* transition: opacity 0.5s; */
+  transform: translateX(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #e4e40b;
+  color: #333;
+}
+
+.carousel-item p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#contact {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  clear: both;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 430px;
+}
+
+#contact h1 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input, #contact textarea {
+  width: 80%;
+  height: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  width: 80%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body bgcolor ="#373737">
+  <header>
+  
+  <nav>
+    <a href="EV.html"><img id="image" src="icon (1).png" ></a>
+    <a href="EV.html"> Home</a>
+    <a href="aboutus.html"> About us</a>
+    <div class="dropdown">
+      <span>Products</span>
+      <div class="dropdown-content">
+        <a href="s03lite.html" target="_blank"> SE03 Lite</a><br><br>
+        <a href="03.html" target="_blank"> SE03 </a><br><br>
+        <a href="max.html" target="_blank">SE03 Max</a><br><br>
+        <a href="compare.html">Compare all</a><br><br>
+    </div>
+  </div>
+    <a href="contact.html">Contact us</a>
+    <a href="book.html" target="blank">Pre-book now</a>
+    <a href="Rentals.html" target="_blank">Rentals</a>
+    <a href=" https://www.instagram.com/" target="_blank"><i  class="fa-brands fa-instagram ins"></i></a>
+    <a href=" https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    
+  </nav>
+
+</header>
+
+<br>
+<br>
+
+<hr color="black">
+<br>
+<h1 id="changing-text">Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets <span id="changing-word">Style</span>.</h1>
+
+<script>
+  const changingWord = document.getElementById('changing-word');
+  const words = ['Elegance', 'Minimalism', 'Comfort', 'Style'];
+  let wordIndex = 0;
+  setInterval(() => {
+    changingWord.textContent = words[wordIndex];
+    wordIndex = (wordIndex + 1) % words.length;
+  }, 2000);
+</script>
+
+
+<img  id="m2"src="image copy.png">
+<br>
+<br>
+<br>
+<br>
+<a href="book.html" target="_blank" class="pre-book-btn">Pre-book now</a>
+<br>
+<IMG src="image.png" style="width: 99%;">
+
+
+<div class="usp">
+  <h2>Unique Selling Points</h2>
+  <div class="carousel-container">
+    <div class="carousel-item active">
+      <h3>LFP Battery</h3>
+      <p>Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries, renowned for their safety features—eliminating the risk of fire associated with other Lithium batteries.</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Wider tyres</h3>
+      <p>Now, say goodbye to skidding and embrace the leaning turns! Featuring first-of-its-kind, 9.5-inch wider tyres that make this machine an enormous beast that ensures stability on different terrains such as wet roads, mud, and sand.</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Range prediction</h3>
+      <p>Many budget-friendly electric scooters overlook this crucial feature, causing riders to experience range anxiety. With Rhyno, you can ride with peace of mind, thanks to the scooter providing precise information about the remaining battery.</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Extraordinery Experience</h3>
+      <p>Rhyno is more than just a mode of transportation. It is an experience of sheer comfort and style! A seamless fusion of minimalism, sophistication, and a touch of masculinity!</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Rugged and simple Design</h3>
+      <p>We’ve had enough of the EVs looking and feeling like fragile plastic toys. Often fading out and shamelessly breaking in minor accidents, ending up spending weeks and months at service stations for complex repairs. We took a bold step of making something raw, rugged, and practical.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+const carouselContainer = document.querySelector('.carousel-container');
+const carouselItems = carouselContainer.children;
+let currentItemIndex = 0;
+
+setInterval(() => {
+  carouselItems[currentItemIndex].style.transform = 'translateX(-100%)';
+  carouselItems[currentItemIndex].style.opacity = 0;
+  currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
+  carouselItems[currentItemIndex].style.transform = 'translateX(0)';
+  carouselItems[currentItemIndex].style.opacity = 1;
+}, 5000);
+</script>
+<br><br>
+
+
+<section id="contact" style="background-color: #f0f0f0; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); clear: both; width: 30%; margin-top: 20px;">
+  <h1 style="color: #333; font-weight: bold; margin-bottom: 10px;">Get in Touch</h1>
+  <p style="color: #666; font-size: 16px; margin-bottom: 20px;">Contact us to learn more about our electric vehicles</p>
+  <form style="display: flex; flex-direction: column; align-items: center;">
+      <input type="text" placeholder="Name" style="width: 80%; height: 20px; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <input type="email" placeholder="Email" style="width: 80%; height: 20px; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <textarea placeholder="Message" style="width: 80%; height: 40px; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      <button style="width: 80%; height: 40px; background-color: #4CAF50; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Send</button>
+  </form>
+</section>
+
+
+
+  
+ 
+ <footer >
+  <div class="column">
+  <ul>
+        <li><a class="footer-link" href="contact.html">Contact us</a></li>
+         <li><a class="footer-link" href="compare.html"> Products</a></li>
+         <li><a class="footer-link" href=" https://www.linkedin.com/">Career</a></li>
+        
+      </ul>
+    </div>
+    
+    <div class="column" >
+      <ul>
+        
+        <li><a class="footer-link" href="policy.html"> Privacy Policy</a></li>
+        <li><a class="footer-link" href="policy.html"> Website Policy</a></li>
+        <li><a class="footer-link" href="policy.html"> Refund Policy</a></li>
+
+
+      </ul>
+
+    </div>
+
+   
+
+
+    <div class="column" >
+
+      <ul>
+        
+        <li> <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram ins"></i></a></li><br>
+        <li><a href=" https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+
+
+      </ul>
+    </div>
+  </footer>
+ 
+ 
+
+    
+     
+ 
+
+
+
+
+</body>
+
+</html>
